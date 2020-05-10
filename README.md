@@ -8,7 +8,7 @@ Para utilizar clone o projeto para uma pasta ao lado da pasta do repositorio Inf
 ### Pacotes
 Execute o comando abaixo para instalar os pacotes nescessarios para rodar o projeto:
 ```
-pip install pandas geopandas matplotlib geopandas contextily imageio pygifsicle
+pip install pandas geopandas matplotlib contextily imageio pygifsicle numpy
 ```
 ### Execução
 
