@@ -59,7 +59,7 @@ def main():
             gdft = gdf.to_crs({'init': 'epsg:3857'})
             df = map_df.to_crs(epsg=3857)
             # configura o estilo do mapa e dos pontos, o tamanho dos pontos no parametro 'buffer' e plota ambos
-            ax = df.plot(figsize=(5, 5), alpha=0.5, edgecolor='green', color='white')
+            ax = df.plot(figsize=(15, 15), alpha=0.5, edgecolor='green', color='white')
             circles = gdft.buffer(30)
             circles.plot(ax=ax, color='red', alpha=1)
             # Plota o ultimo ciclo para garantir o enquadramento
@@ -71,7 +71,7 @@ def main():
             ctx.add_basemap(ax)
             path = "../Influenza/Espaciais/"+str(simulacao)+"/"+str(ciclo)+".png"
             # salva a figura com bordas reduzidas
-            plt.savefig(path, dpi=300, bbox_inches='tight')
+            plt.savefig(path, dpi=100, bbox_inches='tight')
             # limpa a imagem e fecha os dados carregados para evitar estouro de memoria
             plt.clf()
             plt.close()

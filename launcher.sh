@@ -12,4 +12,5 @@ do
     mkdir $pathSaidas"/"${i}
 done
 
-python gerador.py ${nciclos} ${nsimulacoes}
+python geradorImagens.py ${nciclos} ${nsimulacoes}
+python geradorGifs.py ${nciclos} ${nsimulacoes}

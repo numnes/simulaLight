@@ -1,4 +1,5 @@
 from sys import argv
+from pygifsicle import optimize
 import imageio
 
 def main():
@@ -7,16 +8,20 @@ def main():
         nsimulacoes = int(argv[2])
     else:
         nsimulacoes = 1
-    
-    filenames = []
-    for i in range(nciclos):
-        filename = "../Influenza/Espaciais/0/"+str(i)+".png"
-        filenames.append(filename)
+        
+    for simulacao in range(nsimulacoes):
+        filenames = []
+        for ciclo in range(nciclos):
+            filename = "../Influenza/Espaciais/"+str(simulacao)+"/"+str(ciclo)+".png"
+            filenames.append(filename)
 
-    with imageio.get_writer('../Influenza/Espaciais/0/movie.gif', mode='I', duration=0.05) as writer:
-        for filename in filenames:
-            image = imageio.imread(filename)
-            writer.append_data(image)
+        gif_path = "../Influenza/Espaciais/"+str(simulacao)+"/movie.gif"
+
+        with imageio.get_writer(gif_path, mode='I', duration=0.3) as writer:
+            for filename in filenames:
+                image = imageio.imread(filename)
+                writer.append_data(image)
+        optimize(gif_path)
 
 
 if __name__ == '__main__': main()
