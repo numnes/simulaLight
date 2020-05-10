@@ -12,7 +12,7 @@ pip install pandas geopandas matplotlib geopandas contextily imageio pygifsicle
 ```
 ### Execução
 
-Nas descrições abaixo onde **X** representa o indice da simulação.
+Nas descrições abaixo **X** representa o indice da simulação.
 
 O arquivo geradorImagens.py gera as imagens a partir do arquivo .csv gerado na simulação, localizado na pasta Influenza/Saidas/MonteCarlo_**X**/Simulacao_0/Espacial_Humanos.csv, as imagens são salvas por padrão na pasta Influenza/Espaciais/**X**/. O arquivo recebe dois parametros de entrada sendo o primeiro o numero de ciclos das simulações a serem processadas e o segundo o numero de simulações.
 
