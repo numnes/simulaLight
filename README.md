@@ -20,5 +20,4 @@ Já o arquivo geradorGifs.py gera gifs a partir das imagens geradas pelo arquivo
 
 O arquivo launcher.sh serve para automatizar o processo de geração dos resultados, quando executado ele exclui a pasta Espaciais executa a geração de imagens e gifs para todas as simulações, ele recebe como parâmetros o número de simulações e o número de ciclos que elas possuem.
 
-![Exemplo de GIF gerado](https://media.giphy.com/media/YQGdO3DApPvsJ1uPFu/giphy.gif)
-Exemplo de GIF gerado
+[Exemplo de GIF gerado](https://media.giphy.com/media/YQGdO3DApPvsJ1uPFu/giphy.gif)
